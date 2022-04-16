@@ -18,16 +18,18 @@
     "lt": "bin/lt.js"
   },
   "scripts": {
-    "test": "mocha --reporter list --timeout 60000 -- *.spec.js"
+    "test": "mocha --reporter list --timeout 60000 -- *.spec.js",
+    "dev": "nodemon ./bin/lt.js -p 3000 --host=http://localhost:5000 --subdomain=ha"
   },
   "dependencies": {
-    "axios": "0.21.4",
-    "debug": "4.3.2",
-    "openurl": "1.1.1",
-    "yargs": "17.1.1"
+    "axios": "^0.26.1",
+    "debug": "^4.3.4",
+    "openurl": "^1.1.1",
+    "yargs": "^17.4.1"
   },
   "devDependencies": {
-    "mocha": "~9.1.1"
+    "mocha": "^9.2.2",
+    "nodemon": "^2.0.15"
   },
   "engines": {
     "node": ">=8.3.0"
