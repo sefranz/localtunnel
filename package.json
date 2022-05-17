@@ -19,7 +19,7 @@
   },
   "scripts": {
     "test": "mocha --reporter list --timeout 60000 -- *.spec.js",
-    "dev": "nodemon ./bin/lt.js -p 3000 --host=http://localhost:5000 --subdomain=ha"
+    "dev": "DEBUG=lt* nodemon ./bin/lt.js -p 3000 --host=https://lt.sefranz.de --subdomain=ha"
   },
   "dependencies": {
     "axios": "^0.26.1",
